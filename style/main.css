@@ -15,15 +15,27 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    margin: 0;
-    padding: 0;
 }
 
+.mains {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .conteiner {
     width: 100%;
     max-width: 1440px;
@@ -31,7 +43,98 @@ body {
     padding: 0 250px;
 }
 
-.story {}
+/* -----------------header */
+.constuct {}
+
+.constuct-title {
+    background-image: url(../images/header_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 769px;
+    text-align: center;
+    padding: 40px;
+}
+
+.constuct-logo {
+    margin-bottom: 298px;
+}
+
+.h1_title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 5.6px;
+    margin-left: 12px;
+}
+
+.h4_title {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 216px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.text-button {
+    color: rgba(255, 255, 255, 1);
+    font-style: Semibold;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/* ------------navbar */
+.navbar {
+    padding: 21px 0;
+    border-bottom: solid 1px rgba(230, 230, 230, 1);
+    ;
+}
+ 
+.navbar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {}
+
+.right-navbar {}
+
+
+.right-navbar ul li a {
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 400;
+    color: rgba(72, 85, 91, 1);
+    font-size: 12px;
+    letter-spacing: 1.09px;
+    transition: color 0.3s ease;
+
+
+
+}
+
+.right-navbar ul li a:hover {
+    color: rgba(0, 164, 229, 1);
+    text-shadow:
+        0.5px 0 0 rgba(0, 164, 229, 1),
+        0 0.5px 0 rgba(0, 164, 229, 1);
+}
+
+
+
+.navbar-menu {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+/* -----------------story */
+.story {
+    margin-bottom: 80px;
+}
 
 .story-title_2 {
     color: #48555B;
@@ -39,7 +142,8 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    padding: 50px 0;
+    padding: 54px 0;
+    letter-spacing: 2.31px;
 }
 
 .story-title_2:after {
@@ -56,7 +160,7 @@ body {
 
 .story-inner {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 
@@ -69,6 +173,7 @@ body {
     font-weight: bold;
     font-size: 20px;
     color: #48555B;
+    margin-bottom: 30px;
 
 }
 
@@ -76,7 +181,13 @@ body {
     color: #16ACE8;
 }
 
-.story-text {}
+.story-text {
+    color: rgba(72, 85, 91, 1);
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.19px;
+
+}
 
 .story_right {
     display: flex;
@@ -97,14 +208,17 @@ body {
 
 .story_item:nth-child(1) {
     background-image: url(../images/we_plan.png);
+    background-position: 95% 5%;
 }
 
 .story_item:nth-child(2) {
     background-image: url(../images/we_manage.png);
+    background-position: 37% 5%;
 }
 
 .story_item:nth-child(3) {
     background-image: url(../images/we_build.png);
+    background-position: 63% 5%;
     margin-right: 0;
 }
 
@@ -117,7 +231,6 @@ body {
 
 @media(max-width: 1024px) {
     .conteiner {
-
         padding: 0 15px;
     }
 
@@ -129,11 +242,64 @@ body {
 @media(max-width: 500px) {
     .story_right {
         flex-direction: column;
+
     }
 
     .story_item {
         margin-top: 10px;
         margin-right: 0;
     }
+}
+
+/* services */
+
+.services {}
+
+.top-title-text {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.title {}
+
+.services-title2 {
+    color: rgba(72, 85, 91, 1);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2.31px;
+    text-align: left;
+    margin-right: 154px;
+}
+
+.services-text {
+    max-width: 405px;
+    color: rgba(72, 85, 91, 1);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin-right: 31px;
+}
+
+.story-text {}
+
+.servives-btn {
     
 }
+
+.services-btn {}
+
+.bottom-tile {
+    display: flex;
+}
+
+.services-project {}
+
+.services-title3 {}
+
+.tile-text {}
+
+.services-structure {}
+
+.services-factory {}
